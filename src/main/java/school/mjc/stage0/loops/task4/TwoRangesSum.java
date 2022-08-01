@@ -6,12 +6,13 @@ public class TwoRangesSum {
             System.out.println("number to skip is bugger than the last");
         else if (lastInRow < 0)
             System.out.println("last number in row is negative");
-        else
+        else {
             System.out.println("Skipped sum is number " + (numberToSkip + lastInRow));
             int sum = 0;
             for (int i = numberToSkip + 1; i <= lastInRow; i++) {
                 sum += i;
             }
-            System.out.println(sum);
+            System.out.println("counted sum is " + sum);
+        }
     }
 }
